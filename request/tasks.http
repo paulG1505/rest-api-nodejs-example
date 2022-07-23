@@ -1,0 +1,33 @@
+@api = http://127.0.0.1:3000/tasks
+
+##All Task
+GET {{api}}
+
+### busqueda por id
+GET {{api}}/1
+
+### numero de registros
+GET {{api}}/count
+
+### crear consulta
+POST {{api}}
+Content-Type: application/json
+
+{
+  "title": "my third task",
+  "description": "some third task"
+}
+
+###borar tarea
+DELETE {{api}}/7
+
+###actualizacion 
+PUT {{api}}/10
+content-type: application/json
+
+{
+  "title": "PRUEBA",
+  "description": "UPDATE"
+}
+
+
